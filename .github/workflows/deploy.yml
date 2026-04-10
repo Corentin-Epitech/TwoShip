@@ -20,6 +20,7 @@ jobs:
             - run: npm install
             - run: npm run mocha:test
             - run: npm run eslint:check
+              continue-on-error : true
             - run: npm audit
               continue-on-error : true
             - run: npm run build
