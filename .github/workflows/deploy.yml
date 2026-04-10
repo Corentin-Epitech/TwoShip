@@ -20,4 +20,6 @@ jobs:
             - run: npm install
             - run: npm run mocha:test
             - run: npm run eslint:check
+            - run: npm audit
             - run: npm run build
+
