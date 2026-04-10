@@ -7,7 +7,7 @@
     "mocha:test": "mocha test",
     "dev": "vite",
     "build": "vite build",
-    "eslint:check": "eslint --fix",
+    "eslint:check": "eslint src/ --fix",
     "serve": "vite preview"
   },
   "repository": {
