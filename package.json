@@ -7,7 +7,7 @@
     "mocha:test": "mocha test",
     "dev": "vite",
     "build": "vite build",
-    "eslint:check": "npx eslint ./* ",
+    "eslint:check": "npx eslint ./src ",
     "serve": "vite preview"
   },
   "repository": {
@@ -21,10 +21,9 @@
   },
   "homepage": "https://github.com/razh/js13k-2021#readme",
   "devDependencies": {
-    "@eslint/js": "10.0.1",
     "del": "6.0.0",
     "escape-string-regexp": "5.0.0",
-    "eslint": "7.32.0",
+    "eslint": "8.57.0",
     "eslint-config-google": "0.14.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",

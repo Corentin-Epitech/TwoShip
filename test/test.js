@@ -18,7 +18,7 @@ describe('Math', () => {
         it ('Should return 3', () => {
             assert.strictEqual(Math.mapLinear(1,2,3,4,5), 3)
         })
-        it ('Shoul return 0.882352941176471', () => {
+        it ('Should return 0.882352941176471', () => {
             assert.strictEqual(Math.mapLinear(1,20,3,40,5), 0.882352941176471)
         })
     })
