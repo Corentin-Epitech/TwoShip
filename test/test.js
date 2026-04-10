@@ -1,6 +1,6 @@
 const assert = require("assert")
 const { describe } = require("mocha")
-const Math = require("/home/rey/Repo wac/TwoShip/src/math")
+const Math = require("../src/math")
 
 describe('Math', () => {
     
