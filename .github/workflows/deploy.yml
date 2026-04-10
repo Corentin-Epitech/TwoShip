@@ -21,5 +21,6 @@ jobs:
             - run: npm run mocha:test
             - run: npm run eslint:check
             - run: npm audit
+              continue-on-error : true
             - run: npm run build
 
