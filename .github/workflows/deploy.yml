@@ -18,5 +18,5 @@ jobs:
                 node-version: 16.13.x
                 cache: npm
             - run: npm install
-
+            - run: npm run mocha:test
             - run: npm run build
