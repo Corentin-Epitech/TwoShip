@@ -19,4 +19,5 @@ jobs:
                 cache: npm
             - run: npm install
             - run: npm run mocha:test
+            - run: npm run eslint:check
             - run: npm run build
