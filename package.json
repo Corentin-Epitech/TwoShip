@@ -55,5 +55,8 @@
     "arrowParens": "avoid",
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "dependencies": {
+    "cypress": "15.13.1"
   }
 }
