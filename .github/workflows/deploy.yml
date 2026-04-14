@@ -23,8 +23,8 @@ jobs:
             - run: npm run eslint:check
               continue-on-error : true
             
-            - run : npm run cypress:test
-            - run : npm run playwright:test
+            - run : npm run cypress:run
+            - run : npm run playwright:run
               
             - run: npm audit
               continue-on-error : true
