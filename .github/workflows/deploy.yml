@@ -22,9 +22,9 @@ jobs:
             - run: npm run mocha:test
             - run: npm run eslint:check
               continue-on-error : true
-            - run : npm run dev 
-            - run : npm run cypress:run
-            - run : npm run playwright:run
+            
+            - run : npm run cypress:test
+            - run : npm run playwright:test
               
             - run: npm audit
               continue-on-error : true
