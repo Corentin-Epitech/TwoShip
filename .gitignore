@@ -5,3 +5,10 @@ cypress/fixtures
 cypress/support
 cypress/e2e/1-getting-started
 cypress/e2e/2-advanced-examples
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

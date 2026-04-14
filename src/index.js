@@ -327,3 +327,8 @@ addEventListener('click', () => {
     animate();
   }
 });
+
+window.gl = gl;
+window.running = running;
+window.camera = camera;
+window.scene = scene;
