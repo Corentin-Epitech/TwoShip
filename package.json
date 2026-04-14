@@ -9,7 +9,9 @@
     "build": "vite build",
     "eslint:check": "npx eslint ./src ",
     "cypress:run": "cypress run",
-    "cypress:test": "start-server-and-test serve http://localhost:3000 cypress:run",
+    "cypress:test": "start-server-and-test dev http://localhost:3000 cypress:run",
+    "playwright:run":"npx playwright test",
+    "playwright:test": "start-server-and-test dev http://localhost:3000 playwright:run ",
     "app:serve": "nodemon",
     "serve": "vite preview"
   },

@@ -21,6 +21,9 @@ jobs:
             - run: npm install
             - run: npm run mocha:test
             - run: npm run eslint:check
+            - run : npm dev 
+            - run : npm run cypress:run
+            - run : npm run playwright:run
               continue-on-error : true
             - run: npm audit
               continue-on-error : true
