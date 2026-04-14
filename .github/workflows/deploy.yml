@@ -24,6 +24,7 @@ jobs:
               continue-on-error : true
             
             - run : npm run cypress:run
+            - run : npx playwright install
             - run : npm run playwright:run
               
             - run: npm audit
