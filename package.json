@@ -12,7 +12,7 @@
     "cypress:test": "start-server-and-test app:serve http://localhost:3000 cypress:run",
     "playwright:run":"npx playwright test",
     "playwright:test": "start-server-and-test app:serve http://localhost:3000 playwright:run ",
-    "app:serve": "nodemon src",
+    "app:serve": "nodemon",
     "serve": "vite preview"
   },
   "repository": {
