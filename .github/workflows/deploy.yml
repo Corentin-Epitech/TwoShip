@@ -38,6 +38,6 @@ jobs:
               continue-on-error : true
             - name: Build the project and do a summary
               run: npm run build |
-                  echo "## Build Results" >> $GITHUB_STEP_SUMMARY
+                  echo "## Build Results" >> $GITHUB_STEP_SUMMARY |
                   echo "Build completed successfully at $(date)" >> $GITHUB_STEP_SUMMARY
 
