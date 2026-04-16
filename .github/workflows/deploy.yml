@@ -18,18 +18,26 @@ jobs:
               with:
                 node-version: 22.22.x
                 cache: npm
-            - run: npm install
-            - run: npm run mocha:test
-            - run: npm run eslint:check
+            - name: Install npm module
+              run: npm install
+            - name : Run unit test with mocha
+              run: npm run mocha:test
+            - name: Run linter with eslint
+              run: npm run eslint:check
               continue-on-error : true
             
-            - run : npm run cypress:run
-            - run : npx playwright install
-            - run : npm run playwright:run
+            - name: Run functionnal test with cypress
+              run : npm run cypress:run
+            - name: Install playwright for functional test
+              run : npx playwright install
+            - name: Run functionnal test with cypress
+              run : npm run playwright:run
               
-            - run: npm audit
+            - name: Do an audit of the installation
+              run: npm audit
               continue-on-error : true
-            - run: npm run build ||
+            - name: Build the project and do a summary
+              run: npm run build |
                   echo "## Build Results" >> $GITHUB_STEP_SUMMARY
                   echo "Build completed successfully at $(date)" >> $GITHUB_STEP_SUMMARY
 
