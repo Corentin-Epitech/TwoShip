@@ -63,4 +63,4 @@ jobs:
           with:
             context: .
             push: true
-            tags: ghcr.io/${{ env.REPO_OWNER }}/keep-white-space:latest
+            tags: ghcr.io/${{ env.REPO_OWNER }}/TWOSHIP:latest
